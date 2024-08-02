@@ -1,32 +1,31 @@
-# Rectangles Test Task
+# GUI Layout Design Tool
+## Description
 
-## Описание
+This program uses the PyQt6 library to create a graphical window where you can add, drag, and connect rectangles.
 
-Эта программа с использованием библиотеки PyQt6 создает графическое окно, в котором можно добавлять, перетаскивать и соединять прямоугольники. 
+## Installation and Launch
 
-## Установка и запуск
-
-1. Убедитесь, что у вас установлен Python 3.8 или выше.
-2. Установите зависимости:
+1. Ensure you have Python 3.8 or higher installed.
+2. Install the dependencies:
 
     ```bash
     pip install PyQt6
     ```
-3. Запустите файл `main.py`:
+3. Run the `main.py` file:
 
     ```bash
     python main.py
     ```
-## Использование
+## Usage
 
-### Режимы работы
+### Modes of Operation
 
-- **Режим добавления**: По двойному клику левой кнопкой мыши создается прямоугольник.
-- **Режим соединений**: Нажмите `C` для включения/выключения режима соединений. В этом режиме по клику на два разных прямоугольника между ними создается линия.
-- **Режим удаления**: Нажмите `D` для включения/выключения режима удаления. В этом режиме по клику на линию она удаляется.
+- **Add Mode**: Double-clicking the left mouse button creates a rectangle.
+- **Connection Mode**: Press `C` to toggle connection mode. In this mode, clicking on two different rectangles will create a line between them.
+- **Delete Mode**: Press `D` to toggle delete mode. In this mode, clicking on a line will delete it.
 
-## Примечания
+## Notes
 
-- Прямоугольники не создаются, если место клика слишком близко к краям сцены или пересекается с другим прямоугольником.
-- Связи автоматически обновляются при перемещении прямоугольников.
-- Прямоугольник нельзя создать в режиме соединения или удаления.
+- Rectangles are not created if the click location is too close to the scene edges or intersects with another rectangle.
+- Connections automatically update when rectangles are moved.
+- Rectangles cannot be created in connection or delete mode.
